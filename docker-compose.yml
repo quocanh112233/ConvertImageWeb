@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: py-converter-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+      # Map tmp folder if you want to inspect files, though app cleans them up
+      - ./backend/tmp:/app/tmp
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=http://localhost:8000
+    container_name: py-converter-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
