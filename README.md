@@ -1,6 +1,6 @@
 # Py-Converter - Web Image Tool
 
-Website chuyển đổi định dạng ảnh mạnh mẽ, hỗ trợ các định dạng phổ biến cho Web và định dạng Khoa học/Đồ họa.
+Website chuyển đổi định dạng ảnh.
 
 ## Tính năng nổi bật
 

@@ -3,8 +3,6 @@ import { DropZone } from './components/DropZone';
 import { ConfigPanel } from './components/ConfigPanel';
 import { Processing } from './components/Processing';
 import { Result } from './components/Result';
-import { Github, Info } from 'lucide-react';
-
 function App() {
   const step = useAppStore((state) => state.step);
 
